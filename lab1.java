@@ -1,5 +1,5 @@
 // CS 325 Data Structures - Lehman
-//
+// Chidi Emenike - 29/08/2025
 // fall 2025
 // lab1.java
 //
