@@ -1,7 +1,8 @@
 
 // CircularCharQueue.java
 // fall 2025
-// lehman
+// chidi emenike
+// 10-03-2025
 
 import org.w3c.dom.Node;
 
@@ -88,13 +89,13 @@ public class CircularCharQueue {
     public void spin() {
         if (back == null) return;
 
-    int spins = size; 
+    int spins = 2; 
 
     for (int i = 0; i < spins; i++) {
         this.next();
     }
 
-    System.out.println("Spun the queue " + spins + " times.");
+    System.out.println("Spins" + spins);
 }
 
     // ASCII version
