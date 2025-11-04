@@ -16,8 +16,13 @@ public class ai {
 
         System.out.println("Pick a number between 1 and " + MAX + " but don’t tell me");
 
-        int maxGuesses = (int) Math.ceil(Math.log(MAX) / Math.log(2));
-        System.out.println("I can guess your number in " + maxGuesses + " guesses");
+        int maxGuesses = 0;
+        int n = MAX;
+            while (n > 0) {
+                 n = n / 2;
+            maxGuesses++;
+    }
+System.out.println("I can guess your number in " + maxGuesses + " guesses");
 
         while (!found && low <= high) {
             int guess = (low + high) / 2;
@@ -38,14 +43,14 @@ public class ai {
                 } else if (hint.equals("l")) {
                     high = guess - 1;
                 } else {
-                    System.out.println("Invalid input. Game over!");
+                    System.out.println("Invalid input!");
                     break;
                 }
             }
         }
 
         if (!found)
-            System.out.println("Your answers were inconsistent. Game over!");
+            System.out.println("Game over!");
 
         sc.close();
     }
